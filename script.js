@@ -19,6 +19,8 @@
   //
   // TODO: Add code to display the current date in the header of the page.
   $(function () {
+$("#currentDay").text(dayjs().format("dddd MMMM D,YYYY"))
+
   $(".saveBtn").on("click",function(){
     var time = $(this).parent().attr("id")
     var text = $(this).siblings(".description").val()
